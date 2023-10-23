@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+    <link href="./style.css?n" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="gameBoard">
+            <div class="heart">
+                <div>جان باقیمانده</div>
+                <div id="heart"></div>
+            </div>
+            <div class="score">
+                <div>بیشترین امتیاز</div>
+                <div id="mostScore"></div>
+                <div>امیتاز این بازی</div>
+                <div id="score"></div>
+            </div>
+            <canvas></canvas>
+        </div>
+
+        <div class="modal active" id="start">
+            <div class="modal__content">
+                <h2>برای شروع بازی کلیک کنید</h2>
+                <button>
+                    شروع
+                </button>
+            </div>
+        </div>
+
+        <div class="modal" id="end">
+            <div class="modal__content">
+                <h2>!شما باختید</h2>
+                <button>
+                    شروع دوباره
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/main.js"></script>
+
+</html>
