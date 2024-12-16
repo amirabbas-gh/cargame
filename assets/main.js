@@ -110,6 +110,17 @@ onkeydown = (evn) => {
     }
 }
 
+let controllers = document.querySelectorAll(".mobileController > span");
+for(let controller of controllers) {
+    controller.onclick = () => {
+        if(controller.classList.contains("left")) {
+            if (carModel.x == 200) carModel.move = -5;
+        } else {
+            if (carModel.x == 85) carModel.move = 5;
+        }
+    }
+}
+
 // start game
 let stared = false;
 let startModals = Array.from(document.querySelectorAll(".modal"));
